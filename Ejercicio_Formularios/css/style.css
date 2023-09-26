@@ -1,0 +1,14 @@
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-group {
+    text-align: left;
+    margin: 0 10px;
+}
+label {
+    font-weight: 600;
+}
+
