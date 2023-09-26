@@ -8,18 +8,22 @@
 <body>
 
     <?php
-    $v1= 2;
-    $v2= 2;
-    $v3= 3;
-    echo "Los numeros son ".$v1.", ".$v2." +y ".$v3.". <br>";
-    if($v1 == $v2){
-        echo "Dos de los números son iguales a ".$v1;
-    } elseif($v2 == $v3){
-        echo "Dos de los números son iguales a ".$v2;
-    } elseif($v1 == $v3){
-        echo "Dos de los números son iguales a ".$v1;
-    } else {
-        echo "Ningun numero es igual";
+    $datos = array(1,8,3);
+    $datosOrden = array();
+    for ($i=0; $i < count($datos); $i++) { 
+        if ($datos[$i]< $datos[$i+1] && $datos[$i+1]!=0) {
+            if ($datos[$i]<$datos[$i+2] && $datos[$i+2]!=0) {
+                $datosOrden[$i]=$datos[$i];
+                if ($datos[$i+1]<$datos[$i+2] && $datos[$i+2]!=0) {
+                    # code...
+                }
+            }   elseif ($datos[$i] > $datos[$i+2] && $datos[$i+2]!=0){
+                    $datosOrden[$i]=$datos[$i+2];
+                    $datosOrden[$i+1]=$datos[$i];
+                    $datosOrden[$i+2]=$datos[$i+1];
+            } 
+            
+        } 
     }
     ?>
 </body>

@@ -7,14 +7,7 @@
 </head>
 <body>
     <?php
-    $name = "Kevin";
-    echo "HOLA <b>".$name."</b>, encantado de conocerte";
-    $numero6 = 6;
-    $numero3 = 3;
-    echo "Las operaciones entre ".$numero6." y ".$numero3." son: <br>";
-    echo "Suma ".$numero6." + ".$numero3." = ".$numero6 + $numero3."<br>";
-    echo "Resta ".$numero6." - ".$numero3." = ".$numero6 - $numero3."<br>";
-    echo "Multiplicación ".$numero6." * ".$numero3."= ".$numero6 * $numero3;
+    echo "Ongi etorri al modulo Desarrollo web en entorno servidor";
     ?>
 
 </body>
